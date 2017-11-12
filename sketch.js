@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+ // background(0);
   noStroke();
   fill(255);
   text("slow", 5, height/2);
