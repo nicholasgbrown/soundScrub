@@ -9,9 +9,9 @@ function preload() {
 
 function setup() {
   createCanvas(900, 1336);
-  button = createButton("PLAY");
-  button.position(10, (height-25));
-  button.touchStarted(playStop);
+//   button = createButton("PLAY");
+//   button.position(10, (height-25));
+//   button.touchStarted(playStop);
 }
 
 function draw() {
@@ -38,12 +38,11 @@ function draw() {
 
 function playStop() {
 
-  if(!sound.isPlaying()) {
+  if(touchStarted()) {
     sound.play();
-    button.html("STOP");
   } else {
     sound.stop();
-    button.html("PLAY");
+
   }
 }
 
