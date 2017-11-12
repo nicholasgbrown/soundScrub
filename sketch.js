@@ -11,7 +11,7 @@ function setup() {
   createCanvas(900, 1336);
   button = createButton("PLAY");
   button.position(10, (height-25));
-  button.mousePressed(playStop);
+  button.touchStarted(playStop);
 }
 
 function draw() {
