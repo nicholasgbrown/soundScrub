@@ -23,12 +23,6 @@ function draw() {
   rate = map(mouseX, 0, width, 0.01, 2);
   vol = map(mouseY, 0, height, 1, 0);
   
-   function touchStarted() {
-    sound.play();
-     // prevent default
-     return false;
-  }
-  
   stroke(255);
   line(mouseX, 0, mouseX, height);
   line(0, mouseY, width, mouseY);
@@ -40,6 +34,12 @@ function draw() {
   
   
 }
+
+  function touchStarted() {
+    sound.play();
+     // prevent default
+     return false;
+  }
 
 
 
