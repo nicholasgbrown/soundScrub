@@ -9,9 +9,6 @@ function preload() {
 
 function setup() {
   createCanvas(900, 1336);
-//   button = createButton("PLAY");
-//   button.position(10, (height-25));
-//   button.touchStarted(playStop);
 }
 
 function draw() {
@@ -34,15 +31,11 @@ function draw() {
   
   sound.setVolume(vol);
   sound.rate(rate);
-}
-
-function playStop() {
-
-  if(touchStarted()) {
+  
+   if(touchStarted()) {
     sound.play();
   } else {
     sound.stop();
-
   }
 }
 
