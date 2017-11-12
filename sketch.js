@@ -45,5 +45,5 @@ function touchEnded() {
   sound.stop();
   //prevent default
   return false;
-
+}
 
