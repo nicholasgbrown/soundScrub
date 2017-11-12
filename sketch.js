@@ -23,10 +23,10 @@ function draw() {
   rate = map(mouseX, 0, width, 0.01, 2);
   vol = map(mouseY, 0, height, 1, 0);
   
-   if(touchStarted()) {
+   function touchStarted() {
     sound.play();
-  } else {
-    sound.stop();
+     // prevent default
+     return false;
   }
   
   stroke(255);
