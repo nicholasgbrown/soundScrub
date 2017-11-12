@@ -8,7 +8,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(360, 640);
+  createCanvas(640, 1136);
   button = createButton("PLAY");
   button.position(10, (height-25));
   button.mousePressed(playStop);
