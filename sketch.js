@@ -23,7 +23,7 @@ function draw() {
   text("loud", width/2, 15);
   text("soft", width/2, height-10);
   
-  rate = map(mouseX, 0, width, 0, 1);
+  rate = map(mouseX, 0, width, 0.01, 2);
   vol = map(mouseY, 0, height, 1, 0);
   
   stroke(255);
